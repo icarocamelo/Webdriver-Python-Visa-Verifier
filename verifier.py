@@ -5,7 +5,7 @@ from selenium.webdriver.support.ui import Select
 from selenium.common.exceptions import NoSuchElementException
 import unittest, time, re
 
-class VisaEsposa(unittest.TestCase):
+class Visa(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Firefox()
         self.driver.implicitly_wait(30)
@@ -13,7 +13,7 @@ class VisaEsposa(unittest.TestCase):
         self.verificationErrors = []
         self.accept_next_alert = True
     
-    def test_visa_esposa(self):
+    def test_visa(self):
         driver = self.driver
         driver.get(self.base_url + "/Canada/Brazil/track_your_application.html")
 	time.sleep(5)
